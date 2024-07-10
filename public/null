@@ -1,0 +1,415 @@
+Customer::all();
+Mobile::all();
+Mobile::find(1);
+Mobile::find(1)->mobile;
+Customer::find(1)->mobile;
+Customer::select('name');
+Customer::select('name')->get();
+Customer::select('name','email')->get();
+Customer::select('name','description')->get();
+Customer::select('name','description')->get();
+Customer::select('name','&','description')->get();
+Customer::select('name','description');
+Customer::select('name','description')->where('id',5);
+Customer::select('name','description')->where('id',5);
+Customer::select('name','description')->where('id',5)->get();
+Customer::select('name')->where('id',5)->get();
+Customer::where('name','Kunal')->mobile;
+$cust = Custcmer::where('name','Kunal');
+$cust->mobile
+$cust = Customer::where('name','Kunal');
+$cust->mobile
+$cust = Customer::where(name,'Kunal');
+$cust->mobile
+$cust = Customer::where('name','Kunal');
+$cust->mobile;
+$cust = Customer::where('name','Kunal')->get();
+$cust->mobile;
+$cust = Customer::find(1)->get();
+$cust->mobile;
+$cust = Customer::find(1);
+$cust->mobile;
+$cust = Customer::where('id',2);
+$cust->mobile;
+$cust = Customer::where('id',2);
+return $cust;
+$cust->mobile;
+$cust = Customer::where('id',2)->first();
+$cust->mobile;
+$cust = Customer::where('id',4)->first();
+$cust->mobile;
+$cust = Customer::where('id',3)->first();
+$cust->mobile;
+$cust = Customer::where('name','Kunal')->first();
+$cust->mobile;
+$cust = Customer::where('name','Ritik')->first();
+$cust->mobile;
+$cust = Customer::where('name','Ritik')->first();
+$cust->mobile;
+$cust = Customer::where('name','Sohan')->first();
+$cust->mobile;
+$cust = Customer::select('name')->first();
+$cust->mobile;
+$cust = Customer::select('name')->first();
+$cust = Customer::select('name','email')->first();
+$cust = Customer::select('name','email');
+$cust = Customer::select('name','email')->get();
+$cust = Customer::select('name','email');
+$cust = Customer::where('id'>5);
+$cust = Customer::where('id'> 5);
+$cust = Customer::where('id','>',' 5');
+$Customer::where('id','>',' 5');
+$Customer::where('id','>',' 5')->get();
+$Customer::where('id','>','5')->firsy();
+$Customer::where('id','>','5')->first();
+Customer::where('id','>','5')->first();
+Customer::where('id','>','5');
+Customer::where('id','>','5')->get();
+Customer::where('id','>','5')
+  ->mobile
+  ->get();
+Customer::where('id','>','5')
+  ->mobile()
+  ->get();
+Customer::where('id','>','5')
+  ->get()->mobile;
+Customer::where('id','>','5')
+  ->get();
+Customer::where('id','>','5')
+  ->with('mobile')
+  ->get();
+Customer::where('id','>','2')
+  ->with('mobile')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Raju')
+  ->with('mobile')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->with('mobile')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->where('mobile','LG400')
+  ->with('mobile')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->with('mobile')
+    ->where('mobile','LG400')
+
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->with('mobile')
+  ->where('model','LG400')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->with('mobile')
+  ->where('model','LG400')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->with('mobile')
+  ->where('model','LG400')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->with('mobile')
+  ->where('model','LG400')
+  ->get();
+Customer::where('id','>','2')
+  ->where('name','Ritik')
+  ->with('mobile')
+  ->get();
+$cust = Customer::where('id','>','2')
+$cust->mobile
+$cust = Customer::where('id','>','2')
+$cust->mobile;
+$cust = Customer::where('id','>','2');
+$cust->mobile;
+$cust = Customer::where('id','>','2')->get();
+$cust->mobile;
+$cust = Customer::where('id',2)->get();
+$cust->mobile;
+$cust = Customer::where('id',2)->get();
+$cust->mobile;
+$cust = Customer::where('id',2)->get();
+$cust = Customer::find('id',2)->get();
+$cust->mobile;
+$cust = Customer::find('id',2);
+$cust->mobile;
+$cust = Customer::find(2);
+$cust->mobile;
+$cust = Customer::find('name');
+$cust->mobile;
+$cust = Customer::find('name','Kunal');
+$cust->mobile;
+$cust = Customer::find('name');
+$cust->mobile;
+$cust = Customer::find(2);
+$cust->mobile;
+$cust = Customer::find(2)->count;
+$cust->mobile;
+$cust = Customer::find(2)->count();
+$cust->mobile;
+$cust = Customer::all();
+$cust->mobile;
+$cust = Customer::all();
+$cust
+$cust = Customer::all();
+$cust->count
+$cust = Customer::all();
+count($cust)
+$cust = Customer::get();
+$cust = Customer::get('name');
+$cust = Customer::get('name','email');
+$cust = Customer::get('name','email');
+$cust = Customer::get('name','email');
+$cust = Customer::get('email');
+$cust = Book::get('email');
+$cust = Books::get('email');
+$cust = Customer::get('email');
+$cust = Customer::get('phne');
+$cust = Customer::get('phone');
+$cust = Customer::get('name');
+$cust = Product::get('name');
+$cust = Products::get('name');
+Product::all();
+$cust = Customer::get('created_at');
+$cust = Customer::get('name','created_at');
+$cust = Customer::select('name','created_at');
+$cust = Customer::select('name','created_at')->get();
+$cust = Customer::select('name','created_at')
+  where('name','Ritik')
+  ->get();
+$cust = Customer::select('name','created_at')
+  ->where('name','Ritik')
+  ->get();
+$cust = Customer::select('name','created_at')
+  ->where('name','Ritik')
+  ->mo
+  ->get();
+$cust = Customer::select('name','created_at')
+  ->where('name','Ritik')
+  ->mobile
+  ->get();
+$cust = Customer::select('name','created_at')
+  ->where('name','Ritik')
+  ->get();
+$cust->mobile
+$cust = Customer::select('name','created_at')
+  ->where('name','Ritik')
+  ->get();
+$cust = Customer::select('name','created_at')
+  ->where('name','Ritik')
+  ->with('mobile')
+  ->get();
+$cust = Customer::select('name','created_at')
+  ->where('name','Kunal')
+  ->with('mobile')
+  ->get();
+$cust = Customer::select('name','created_at')
+    ->with('mobile')
+
+  ->where('name','Kunal')
+  ->get();
+$cust = Customer::select('name','created_at')
+    ->with('mobile')
+  	->where('name','Kunal')
+  	->get();
+$cust = Customer::select('name')
+    ->with('mobile')
+  	->where('name','Kunal')
+  	->get();
+$cust = Customer::where('name','Kunal')
+    ->with('mobile')
+  	->where('name','Kunal')
+  	->get();
+$cust = Customer::where('name','Kunal')
+    ->with('mobile')
+  	->get();
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item;
+  
+});
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+});
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+    echo $item->created_at;
+
+});
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>'
+    echo $item->created_at;
+
+});
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+    echo $item->created_at;
+
+});
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+  echo $item->mobile;
+
+});
+$cust = Customer::where('name','Ritik')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+  echo $item->mobile->model;
+
+});
+$cust = Customer::where('name','Kunal')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+  echo $item->mobile->model;
+
+});
+$cust = Customer::where('name','Sohan')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+  echo $item->mobile->model;
+
+});
+$cust = Customer::where('name','Sohan')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+    echo '<br>';
+
+  echo $item->mobile->model;
+
+});
+$cust = Customer::where('name','Sohan')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+    echo '<br>';
+  echo $item->mobile->model;
+  echo '---------------------------';
+
+
+});
+$cust = Customer::where('name','Sohan')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+    echo '<br>';
+  echo $item->mobile->model;
+      echo '<br>';
+
+  echo '---------------------------';
+
+
+});
+$cust = Customer::where('id','>','2')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+    echo '<br>';
+  echo $item->mobile->model;
+      echo '<br>';
+
+  echo '---------------------------';
+
+
+});
+$cust = Customer::where('id','>','2')
+    ->with('mobile')
+  	->get();
+
+
+$cust->map(function($item){
+    echo '<br>';
+
+  echo $item->name;
+  echo '<br>';
+  echo $item->created_at;
+    echo '<br>';
+  echo $item->mobile->model;
+      echo '<br>';
+
+  echo '---------------------------';
+
+
+});

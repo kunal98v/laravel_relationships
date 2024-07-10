@@ -18,3 +18,5 @@ Route::get('/show-mobile/{id}',[CustomerController::class,'show_mobile']);
 Route::get('/show-customer/{id}',[CustomerController::class,'show_customer']);
 
 Route::get('/add-mobile/{id}',[MobileController::class,'add_mobile']);
+
+

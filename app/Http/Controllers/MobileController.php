@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class MobileController extends Controller
 {
-    public function add_mobile($id){
-        $customer = Customer::find($id);
-        $mobile = new Mobile();
-        $mobile->model = "LG1000";
-        $customer->mobile()->save($mobile);
-        }
-}
+//     public function add_mobile($id){
+//         $customer = Customer::find($id);
+//         $mobile = new Mobile();
+//         $mobile->model = "LG1000";
+//         $customer->mobile()->save($mobile);
+//         }
+ }
