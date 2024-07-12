@@ -13,7 +13,7 @@ class Customer extends Model
     public function mobile(){
 
 
-       return $this->hasOne(Mobile::class); // one to one mapping (Customer->Mobile)
+       return $this->hasMany(Mobile::class); // one to one mapping (Customer->Mobile)
     }
 
 }

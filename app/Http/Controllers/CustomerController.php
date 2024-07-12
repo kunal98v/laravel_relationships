@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Mobile;
 use App\Models\Customer;
+use App\Mail\WelcomeMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 
 class CustomerController extends Controller
 {
@@ -21,8 +25,8 @@ class CustomerController extends Controller
     }
 
     public function show_mobile($id){           //Find mobile by customer id
-        $mobile = Customer::find($id)->mobile;
-        return $mobile;
+        $customer = Customer::find($id);
+        return $customer->mobile;
     }
 
     public function show_customer($id){
@@ -30,6 +34,22 @@ class CustomerController extends Controller
         return $customer;
 
     }
-}
+
+    public function sendWelcomeMail(Request $request){
+        Log::info("in");
+        // return "hello";
+        $name = 'DEfault';
+        $name  = $request->name;
+        
+        $sent = Mail::to("aditya57@fyntune.com")->send(new WelcomeMail($name));
+
+        if ($sent){
+            return response()->json(['status' => true, 'message' => 'Email sent Successfully !']);
+        } else {
+            return response()->json(['status' => false, 'message' => 'Email not sent !']);
+
+        }
+    }
+}   
 
 
